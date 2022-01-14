@@ -15,7 +15,7 @@ PharoEDA Event Replay is a PharoEDA application accepting a command with the eve
 First, load it with Metacello:
 
 ```smalltalk
-Metacello new repository: 'github://osoco/pharo-eda-event-replay:main'; baseline: #PharoEDAEventReplay; load
+Metacello new repository: 'github://rydnr/pharo-eda-event-replay:main'; baseline: #PharoEDAEventReplay; load
 ```
 
 Then, run it with as a regular PharoEDA application.
