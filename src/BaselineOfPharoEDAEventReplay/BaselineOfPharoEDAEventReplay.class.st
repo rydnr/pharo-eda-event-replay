@@ -41,7 +41,7 @@ BaselineOfPharoEDAEventReplay >> declarePackagesIn: spec [
 BaselineOfPharoEDAEventReplay >> includePharoEDA: spec [
 	spec
 		baseline: 'PharoEDA'
-		with: [ spec repository: 'github://osoco/pharo-eda:main' ].
+		with: [ spec repository: 'github://rydnr/pharo-eda:main' ].
 	^ spec
 ]
 
