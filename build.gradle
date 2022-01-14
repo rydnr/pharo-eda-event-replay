@@ -29,13 +29,13 @@ task retrieveFreshGtoolkitImage(type: RetrieveFreshGtoolkitImageTask, dependsOn:
 task loadPharoEDAEventReplay(type: EvalSmalltalkExpressionTask, dependsOn: downloadFreshPharoImage) {
     pharoPath = customPharoPath
     commonPharoArgs = customPharoArgs
-    expression = "Metacello new repository: 'github://osoco/pharo-eda-event-replay:${branchOrTag}'; baseline: 'PharoEDAEventReplay'; onConflictUseLoaded; load"
+    expression = "Metacello new repository: 'github://rydnr/pharo-eda-event-replay:${branchOrTag}'; baseline: 'PharoEDAEventReplay'; onConflictUseLoaded; load"
 }
 
 task loadPharoEDAEventReplayGt(type: EvalSmalltalkExpressionTask, dependsOn: retrieveFreshGtoolkitImage) {
     pharoPath = customPharoPath
     commonPharoArgs = customPharoArgs
-    expression = "Metacello new repository: 'github://osoco/pharo-eda-event-replay:${branchOrTag}'; baseline: 'PharoEDAEventReplay'; onConflictUseLoaded; load"
+    expression = "Metacello new repository: 'github://rydnr/pharo-eda-event-replay:${branchOrTag}'; baseline: 'PharoEDAEventReplay'; onConflictUseLoaded; load"
 }
 
 task customizeImage(type: RunSmalltalkScriptTask, dependsOn: loadPharoEDAEventReplay) {
